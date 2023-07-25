@@ -1,0 +1,8 @@
+{
+  "name": "com.whateep.pixelation-shader",
+  "version": "4.8.20",
+  "unity": "2020.3",
+  "description": "Provides a pixelation shader.",
+  "displayName": "Pixelation",
+  "hideInEditor": false
+}

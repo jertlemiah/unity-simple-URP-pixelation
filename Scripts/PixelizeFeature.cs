@@ -6,6 +6,7 @@ using UnityEngine.Rendering.Universal;
 
 public class PixelizeFeature : ScriptableRendererFeature
 {
+    [SerializeField] private LayerMask pixelizeLayerMask;
     [System.Serializable]
     public class CustomPassSettings
     {
@@ -19,6 +20,7 @@ public class PixelizeFeature : ScriptableRendererFeature
     public override void Create()
     {
         customPass = new PixelizePass(settings);
+        //filteringSettings = new FilteringSettings(RenderQueueRange.opaque, layerMask);
     }
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {

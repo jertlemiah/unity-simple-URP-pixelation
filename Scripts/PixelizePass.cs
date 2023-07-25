@@ -5,7 +5,9 @@ using UnityEngine.Rendering.Universal;
 
 public class PixelizePass : ScriptableRenderPass
 {
+    
     private PixelizeFeature.CustomPassSettings settings;
+
 
     private RenderTargetIdentifier colorBuffer, pixelBuffer;
     private int pixelBufferID = Shader.PropertyToID("_PixelBuffer");
